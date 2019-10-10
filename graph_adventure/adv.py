@@ -57,6 +57,12 @@ traversalPath = ['n', 's']
 visited = {}
 path = []
 
+# add player to starting room
+visited[player.currentRoom.id] = player.currentRoom.getExits()
+
+
+
+
 
 # TRAVERSAL TEST
 visited_rooms = set()
